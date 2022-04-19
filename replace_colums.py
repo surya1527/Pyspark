@@ -10,7 +10,7 @@ def clean_column_names(source_df):
         .replace(")", UNDERSCORE)
         .replace(":", UNDERSCORE)
         .replace("#", UNDERSCORE)
-        .replace("%", "pct")
+        .replace("%", "pct") 
         .lower()
         .strip()
         for c in source_df.columns

@@ -12,7 +12,7 @@ def generate_metrics(spark, source_type, **kwargs):
     # kwargs: Input mutiple dataframes
     # return: A new Spark DataFrame with the metrics
     # rtype: SparkDataframe
-
+ 
     output_dfs = []
     for key, temp_df_table in kwargs.items():
         listColumns = temp_df_table.columns

@@ -8,7 +8,7 @@ def generate_metrics(spark, source_type, **kwargs):
     # spark: spark session
     # type spark: Spark Session
     # source_type: Glue job source type
-    # type source_type: String 
+    # type source_type: String
     # kwargs: Input mutiple dataframes
     # return: A new Spark DataFrame with the metrics
     # rtype: SparkDataframe

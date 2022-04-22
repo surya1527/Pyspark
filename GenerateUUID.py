@@ -8,7 +8,7 @@ def GenerateUUID(source_df):
     # Add a UUID for an ID
     source_df = source_df.withColumn("id", x())
 
-    metrics_df = source_df.select(
+    metrics_df = source_df.select( 
         col("id")
     )
 

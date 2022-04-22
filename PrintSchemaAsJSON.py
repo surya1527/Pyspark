@@ -3,7 +3,7 @@ def PrintSchemaAsJSON(source_df):
 
     data_frame_schema = source_df.schema
 
-    columns = [
+    columns = [ 
         {
             "Name": field.name,
             "DataType": field.dataType.simpleString(),

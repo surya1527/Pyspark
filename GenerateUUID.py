@@ -12,4 +12,4 @@ def GenerateUUID(source_df):
         col("id")
     )
 
-    return metrics_df
+    return metrics_df 

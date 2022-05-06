@@ -3,7 +3,6 @@ from pyspark.sql import SparkSession
 
 spark = SparkSession.builder.appName('sparkSesss').getOrCreate()
 
-
 TABLE_NAMES = ["file_data_object.csv", "file_data_part.csv", "file_data_events.csv"]
 source_path = "s3://trial-bucket-11/trial"
 dest_path = "s3://trial-output/parquet_output"
@@ -22,3 +21,4 @@ def writecom(input_paths):
 
 k = writecom(input_paths)
 print("hello",k)
+
